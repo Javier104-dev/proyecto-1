@@ -13,6 +13,7 @@ const server = express();
 const ruta = path.join(__dirname, "./database/data.json");
 
 server.use(express.json());
+server.use(express.urlencoded({ extended: true }));
 
 server.get("/productos", async (req, res) => {
   try {

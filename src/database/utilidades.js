@@ -5,8 +5,8 @@ const formateador = (objeto) => {
 
   return {
     nombre,
-    importe: importe || 0,
-    stock: stock || "Sin stock",
+    importe,
+    stock,
     id
   };
 };

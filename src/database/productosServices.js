@@ -30,7 +30,7 @@ const crearProducto = async (ruta, producto) => {
 };
 
 const editarProducto = async (ruta, producto) => {
-  if (!producto.id || !producto.nombre)  throw new Error("Datos imcompletos");
+  if (!producto.nombre || !producto.importe || !producto.stock || !producto.id)  throw new Error("Datos imcompletos");
 
   const productos = await leerJson(ruta);
   const indice = productos.findIndex((elemento) => elemento.id === producto.id);

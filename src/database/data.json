@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "nombre": "yerba",
+    "importe": 400,
+    "stock": 20,
+    "id": 1687843896105
+  },
+  {
+    "nombre": "azucar",
+    "importe": 300,
+    "stock": 50,
+    "id": 1687843915969
+  },
+  {
+    "nombre": "galletas de agua",
+    "importe": 420,
+    "stock": 30,
+    "id": 1687905271321
+  },
+  {
+    "nombre": "fideos",
+    "importe": 200,
+    "stock": 120,
+    "id": 1687905789797
+  }
+]
