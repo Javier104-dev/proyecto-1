@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const rutaJson = path.join(__dirname, "productosData.json");
+const rutaJson = path.join(__dirname, "./productosData.json");
 
 const leerJson = () => new Promise((resolve, reject) => {
   fs.readFile(rutaJson, "utf-8", (error, resultado) => {

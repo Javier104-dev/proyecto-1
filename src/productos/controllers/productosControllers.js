@@ -65,10 +65,15 @@ const eliminarProducto = async (req, res) => {
   }
 };
 
+const paginaNoEncontrada = async (req, res) => {
+  res.status(404).json({ 404: 'Pagina no encontrada' });
+};
+
 module.exports = {
   verProductos,
   verProducto,
   crearProducto,
   editarProducto,
-  eliminarProducto
+  eliminarProducto,
+  paginaNoEncontrada
 };

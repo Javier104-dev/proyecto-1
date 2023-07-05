@@ -4,19 +4,20 @@ const {
   verProducto,
   crearProducto,
   editarProducto,
-  eliminarProducto
+  eliminarProducto,
+  paginaNoEncontrada
 } = require("../controllers/productosControllers.js");
 
 const router = express.Router();
 
-router.get('/productos', verProductos);
-router.get('/productos/:id', verProducto);
-router.post('/productos', crearProducto);
-router.put('/productos/:id', editarProducto);
-router.delete('/productos/:id', eliminarProducto);
-router.use('*', (req, res) => {
-  res.status(404).json({ 404: 'Pagina no encontrada' });
-});
+const ROUTE_BASE = "/productos";
+
+router.get(`${ROUTE_BASE}`, verProductos);
+router.get(`${ROUTE_BASE}/:id`, verProducto);
+router.post(`${ROUTE_BASE}`, crearProducto);
+router.put(`${ROUTE_BASE}/:id`, editarProducto);
+router.delete(`${ROUTE_BASE}/:id`, eliminarProducto);
+router.use('*', paginaNoEncontrada);
 
 module.exports = {
   router
