@@ -6,7 +6,7 @@ Segundo proyecto para seguir practicando la creación de un servidor `API RESTfu
 En esta ocasión se creó un servidor para administrar la mercadería de un almacén, para ello se usa un archivo JSON como base de datos y para trabajar de forma asíncrona se utilizaron los métodos `new Promise`.
 
 Las propiedades de las entidades que se usan en este proyecto son:
-```
+``` json
   {
     "nombre": "azucar",
     "importe": 300,
