@@ -51,8 +51,8 @@ La arquitectura que se utilizó es la siguiente:
 | GET    | http://127.0.0.1:8080/productos     | Obtiene los registros de los productos            |
 | GET    | http://127.0.0.1:8080/productos/:id | Obtiene el registro de un producto en específico  |
 | POST   | http://127.0.0.1:8080/productos     | Crea un registro de un nuevo producto             |
-| PUT    | http://127.0.0.1:8080/productos:id  | Modifica el registro de un producto en específico |
-| DELETE | http://127.0.0.1:8080/productos:id  | Elimina el registro de un producto en específico  |
+| PUT    | http://127.0.0.1:8080/productos/:id  | Modifica el registro de un producto en específico |
+| DELETE | http://127.0.0.1:8080/productos/:id  | Elimina el registro de un producto en específico  |
 
 <h2 align='center'>Instrucciones de instalación</h2>
 
